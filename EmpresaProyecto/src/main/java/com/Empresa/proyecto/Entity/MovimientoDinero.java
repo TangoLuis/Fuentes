@@ -3,10 +3,12 @@ package com.Empresa.proyecto.Entity;
 import lombok.Data;
 
 @Data
-public class MovimientoDenero {
+public class MovimientoDinero {
+    private long idMovi;
     private Double monto;
     private String conceptoMovi;
     private Empleado empleado;
+    private Empresa empresa;
     private Double creacionMonto;
 
     public double dato(boolean e){
